@@ -1,4 +1,38 @@
+/* ##### Hjælp #####*/
+/* Baggrundsfarve til container så vi kan holde øje med hvordan vores rows og coloumns reagerer */
 .container{
 	background-color: lightblue;
-	height: 100vh;
+}
+
+/* Sørge for at billeder fylder kassen ud*/
+img {
+	width: 100%
+}
+
+
+/* #### Løsning ####*/
+/* Første row får en padding i bunden */
+/* Det er en dårlig løsning fordi den rammer alle rows på hele siden. Et unikt ID til denne row kan være en løsning*/
+.row:first-child{
+	padding-bottom: 11px;
+}
+
+/* Sidste row får en padding i toppen */
+/* Det er en dårlig løsning fordi den rammer alle rows på hele siden. Et unikt ID til denne row kunne være en løsning*/
+.row:last-child{
+	padding-top: 11px;
+}
+
+/* Den gule og sorte kant */
+.img-border {
+   padding:5px;
+   border:5px solid black;
+   background-color:yellow;
+}
+
+/* Når skræmen er under 992px tilføjes en padding til bunden af det første billede */
+@media only screen and (max-width : 992px){
+	#foo{
+		padding-bottom: 22px;
+	}
 }

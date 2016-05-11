@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
-	<title>Eksempel på responsivt layout</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-</head>
-<body>
-
-<div class="container">
-	
-</div>
-
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Eksempel på responsivt layout</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<!-- En kolonne til venstre side -->
+				<div class="col-sm-12 col-md-6" id="foo">
+					<img class="img-border" src="http://placekitten.com/600/500" alt="Placeholder fra Placekitten">
+				</div>
+				<!-- En kolonne til højre side -->
+				<div class="col-sm-12 col-md-6">
+					<!-- En row til den første række i højre side -->
+					<div class="row">
+						<!-- Opdeling af rækken i første kolonne -->
+						<div class="col-xs-6 col-sm-6 col-md-6">
+							<img class="img-border" src="http://placekitten.com/600/500" alt="Placeholder fra Placekitten">
+						</div>
+						<!-- Opdeling af rækken i anden kolonne -->
+						<div class="col-xs-6 col-sm-6 col-md-6">
+							<img class="img-border" src="http://placekitten.com/600/500" alt="Placeholder fra Placekitten">
+						</div>
+					</div>
+					<!-- En row til den anden række i højre side -->
+					<div class="row">
+						<div class="col-xs-6 col-sm-6 col-md-6">
+							<img class="img-border" src="http://placekitten.com/600/500" alt="Placeholder fra Placekitten">
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6">
+							<img class="img-border" src="http://placekitten.com/600/500" alt="Placeholder fra Placekitten">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
